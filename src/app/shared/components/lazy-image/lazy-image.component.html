@@ -1,0 +1,5 @@
+<div class="d-flex justify-content-center">
+    <img [src]="url" [alt]="alt" (load)="onLoad()" [ngStyle]="{ display: hasLoaded ? '' : 'none' }" class="w-100 animate__animated animate__fadeIn" class="lazy__image">
+
+    <img *ngIf="!hasLoaded" class="loader mt-3" src="assets/loader.svg">
+</div>

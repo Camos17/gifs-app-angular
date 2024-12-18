@@ -1,0 +1,18 @@
+.loader {
+    height: 35px;
+    width: 35px;
+}
+
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 432px;
+    min-height: 243px;   
+}
+
+.lazy {
+    &__image {
+        max-width: 100%;
+    }
+}
